@@ -80,7 +80,7 @@ export default function ClubApp() {
         {/* The AI position — the one solid red block in the section */}
         <Reveal className="mt-12 sm:mt-14" delay={120}>
           <div className="club-cut-br bg-red p-8 text-ink sm:p-12">
-            <p className="club-label">Where the AI stops</p>
+            <p className="club-label">why ultra endurant has its own app</p>
             <h3 className="font-club text-club-md mt-5 max-w-[24ch]">
               {aiStance.heading}
             </h3>

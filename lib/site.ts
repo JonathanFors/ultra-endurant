@@ -94,7 +94,7 @@ export const siteLinks = {
    * redirect here or keep working.
    */
   booking:
-    "https://app.ultraendurant.com/book/e345304d-b105-4f02-8bcc-fef52b727904",
+    "https://app.ultraendurant.com/book/coachjonathan/discovery",
   // The athlete-intake page is intentionally NOT linked anywhere on the site
   // (noindex). Jonathan sends this URL manually to athletes he has spoken to.
   intake: "/athlete-intake",

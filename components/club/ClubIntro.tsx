@@ -25,7 +25,7 @@ export default function ClubIntro() {
           <span className="club-numeral club-hollow shrink-0 text-6xl text-ink sm:text-7xl">
             01
           </span>
-          <span className="club-label shrink-0 text-ink">Who you&apos;d work with</span>
+          <span className="club-label shrink-0 text-ink">your coach</span>
           <span
             aria-hidden="true"
             className="club-slashes h-7 flex-1 text-red [--bar:5px] [--gap:13px]"

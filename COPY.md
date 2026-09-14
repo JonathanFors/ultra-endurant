@@ -207,9 +207,9 @@ athlete.
 | --- | --- |
 | Your schedule | Every session, in order, with the week laid out — so what's next is never a question. |
 | Workout analysis | Finished sessions get read back to you: what the numbers did, and what changed since last time. |
-| Calls, live | Weekly video calls happen in the app. Nothing to install, no link to lose. |
-| Everything said, kept | Notes and transcripts from every call and WhatsApp thread, searchable. You never have to remember what we agreed. |
-| Your links, together | Plans, races, forms, whatever the week needs — in one place instead of five. |
+| Calls & messaging | All calls, 1:1 and group messaging happens directly in the app. |
+| Look up anything | Analyse workouts, search through call transcripts, or find that one message from weeks ago. The smart AI assistant got you covered. |
+| No context-switching | Plans, races, forms, whatever the week needs in one place instead of five. |
 
 ### The AI callout (solid red block)
 
@@ -218,13 +218,13 @@ it gets its own block instead of becoming a sixth card.
 
 | ▸ Field | Current text |
 | --- | --- |
-| Label | Where the AI stops |
+| Label | why ultra endurant has its own app |
 
 > ▸ **Heading**
-> The AI doesn't give advice. That's deliberate.
+> to provide the best possible coaching experience for you
 
 > ▸ **Body**
-> It reads your completed sessions and tells you what happened in them. It will not tell you to push, to back off, to run through something, or to change your plan — that's my job, and I think handing health advice to a model is genuinely dangerous. The analysis is a mirror, not a coach.
+> While we could split things into a WhatsApp chat, a Skool community, and a separate workout calendar the reality is that would be a pretty horrible experience. Keeping everything under one roof means you'll find what you're looking for quicker, and I can coach you much better.
 
 ---
 
@@ -250,18 +250,18 @@ away only works if it doesn't read as a boast.
 
 | ▸ Title | ▸ Body |
 | --- | --- |
-| You're going long | A first ultra, or a next hundred-miler. Either end of that range is fine — the distance you're chasing matters less than that you're actually chasing one. |
-| You have a life already | A job, people who depend on you, and nowhere near enough hours. That's the normal case here, not the awkward one. |
-| You've watched a plan fall apart | Month two, usually. You don't need more discipline — you need a plan built for the week you actually get. |
-| You want a coach who asks | About your sleep, your stress, the thing at work that's eating you. If that sounds like too much, we're not going to get on. |
+| You want someone who sees the full picture | Metrics and numbers matter, but ultimately the big picture is what makes the difference. Consistency over one-off perfection. |
+| You're in it for the long game | Anyone can push hard once or twice, but fewer can do it for a lifetime. You're training for a lifelong active, strong body. |
+| You have a busy life outside of running | Running means a lot, but so does your family, work, friends, and other obligations.  |
+| You want a coach who's proactive | Your coach should be someone who's in it with you, not someone you chase for days just to get a response. |
 
 ### This isn't for you if
 
 | ▸ Title | ▸ Body |
 | --- | --- |
-| You want a plan file and silence | If what you want is a PDF and no conversation, I'm the wrong coach and an expensive way to get one. There are cheaper places. |
+| You want just a workout calendar | If what you want is a PDF and no conversation, I'm the wrong coach and an expensive way to get one. There are cheaper places. |
 | You want the fastest route, whatever it costs | If the answer to every setback is push harder, we'll spend the whole time arguing. I'll ask you to back off, and I'll mean it. |
-| You want someone to just tell you what to do | This works when you say what's actually going on. If you'd rather not be asked, the plan can't respond to anything. |
+| All your focus on are the metrics | Someone once said numbers don't lie, well... in running sometimes they do and looking at the bigger picture is equally important. |
 
 > ▸ **Closing line under the "isn't" column** ("book the call" is a link that opens the booking popup)
 > If you read that list and recognised yourself, no hard feelings — genuinely. And if you're not sure which column you're in, **book the call** and I'll tell you straight.
@@ -278,13 +278,13 @@ Unchanged from the previous version of the page apart from its number (was 02).
 | Section label | The program |
 
 > ▸ **Headline**
-> The plan will change, because **your week does.**
+> The plan will change, because **in 4 steps**
 
 ### The four steps
 
 | ▸ No. | ▸ Title | ▸ Body |
 | --- | --- | --- |
-| 01 | The intro call | Thirty minutes, free. You tell me where you are and what you're aiming at; I tell you whether I think I can help. |
+| 01 | The intro call | 20 minutes, free. You tell me where you are and what you're aiming at; I tell you whether I think I can help. |
 | 02 | Your full picture | A short intake about your running history, your work, your sleep and who depends on you — not just your splits. |
 | 03 | A plan that fits | Training mapped onto the week you actually have, with the load and the rest balanced for you rather than for an average runner. |
 | 04 | Every week after | We talk weekly. When work, travel or a bad run of sleep changes what's possible, the plan changes with it. That's normal, not failure. |
@@ -292,10 +292,10 @@ Unchanged from the previous version of the page apart from its number (was 02).
 ### Red callout at the foot of the section
 
 > ▸ **Heading**
-> There's no pitch at the end of the call.
+> Let's chat, I promise I won't pitch anything.
 
 > ▸ **Body**
-> Thirty minutes, free, and you leave with my honest read on where you are and what your race actually needs. If I'm not the right coach for it, I'll tell you on the call.
+> 20 minutes, free, and you leave with my honest read on where you are and what your race actually needs. If I'm not the right coach for it, I'll tell you on the call.
 
 | ▸ Field | Current text |
 | --- | --- |
@@ -327,17 +327,17 @@ confirm the actual placing before making it more specific.
 | ▸ Figure | ▸ Label |
 | --- | --- |
 | Top 5% | Ranked worldwide on ITRA |
-| MDS | Placed among the elites, Legendary |
+| MDS | Finished with the elite runners in MDS Legendary 2025 |
 | 744 km 🔒 | Longest run — Portugal's coast |
 
 ### Project Portugal, underneath
 
 | ▸ Field | Current text |
 | --- | --- |
-| Eyebrow 🔒 | Project Portugal · 1–10 August 2026 |
+| Eyebrow 🔒 | I ran the length of Portugal (744 km) |
 
 > ▸ **Paragraph 1** 🔒 (every number here is a real fact)
-> The entire coastline of Portugal, in 10 days, for men's mental health, with Niki driving support. It was the second attempt. Two years earlier we set out on the same route and my immune system gave out at 480 km.
+> The entire coastline of Portugal, in 10 days, with my partner Niki crewing support. 2025 was the second attempt after the first one got us only half way.
 
 > ▸ **Paragraph 2**
 > The second one is the line on the page. The first one is the reason it's worth anything: I know what it is to do the work, do it properly, and still have to stop — and then to decide whether you go back.
@@ -369,14 +369,14 @@ group sits beside it as the smaller outlined card.
 | Beside the price | No minimum period |
 
 > ▸ **Body**
-> We set the goals together — ones that fit your life and the direction you want it to go — then work at them week by week. A call every week, and me on WhatsApp in between for the days that don't go to plan. First ultra or hundredth.
+> We set the goals together — ones that fit your life and the direction you want it to go — then work at them week by week. A call every week, and direct access to message me any time you need it. First marathon, ultra, or pushing for elite placements.
 
 | ▸ What's included 🔒 |
 | --- |
-| 24/7 access to me on WhatsApp |
+| Call & message me anytime in the Ultra Endurant App |
 | A weekly 1:1 call |
-| No template workouts — every session written for you |
-| Extra calls whenever you need them |
+| Custom workout plans made only for you |
+| Detailed video library showing every workout movement |
 | No minimum period. Cancel anytime |
 
 | ▸ Field | Current text |
@@ -397,7 +397,7 @@ group sits beside it as the smaller outlined card.
 
 | ▸ Points 🔒 |
 | --- |
-| Kept small — around 5 athletes |
+| Small groups of 5 people |
 | Matched on goals and constraints |
 | Mixed on level, on purpose |
 
@@ -461,10 +461,10 @@ false. Re-check beehiiv before raising it, and don't round up.
 | Eyebrow | UESCA-certified |
 
 > ▸ **Headline**
-> Tell me about your race.
+> Tell me about your goals.
 
 > ▸ **Body**
-> Thirty minutes, free, and nothing to buy at the end. If we're a fit, we build from there. If we're not, you'll still leave knowing what your next step is.
+> 20 minutes, free, and nothing to buy at the end. If we're a fit, we build from there. If we're not, you'll still leave knowing what your next step is.
 
 | ▸ Field | Current text |
 | --- | --- |
@@ -485,7 +485,7 @@ false. Re-check beehiiv before raising it, and don't round up.
 | Column 3 links | Email · Instagram · LinkedIn |
 | Copyright | © 2026 Ultra Endurant. All rights reserved. |
 | Attribution | Ultra Endurant is one coach: Jonathan Fors. |
-| Right-hand line 🔒 | 744 km down the coast of Portugal for men's mental health. |
+| Right-hand line 🔒 | I'll hold you accountable :) |
 
 Split by what a link *is*, not where it goes: column 1 is the homepage's own
 sections, column 2 is the three things you can actually do, column 3 is

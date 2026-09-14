@@ -98,3 +98,4 @@ JSON-LD (`Person` + coaching `Service`) is injected in
 
 See [`PLACEHOLDERS.md`](PLACEHOLDERS.md) for everything still marked
 `TODO:CONTENT` before launch.
+<!-- Coaching HQ smoke test -->

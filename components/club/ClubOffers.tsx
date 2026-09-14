@@ -5,7 +5,7 @@ import { ArrowIcon } from "@/components/icons";
 import { groupCoaching, oneToOne, siteLinks, subscribeSource } from "@/lib/site";
 
 const GROUP_POINTS = [
-  "Kept small — around 5 athletes",
+  "Small groups of 5 people",
   "Matched on goals and constraints",
   "Mixed on level, on purpose",
 ] as const;
@@ -75,10 +75,7 @@ export default function ClubOffers() {
                 </div>
 
                 <p className="mt-8 max-w-xl text-lg leading-relaxed text-snow-dim">
-                  We set the goals together — ones that fit your life and the
-                  direction you want it to go — then work at them week by week.
-                  A call every week, and me on WhatsApp in between for the days
-                  that don&apos;t go to plan. First ultra or hundredth.
+                  We set the goals together — ones that fit your life and the direction you want it to go — then work at them week by week. A call every week, and direct access to message me any time you need it. First marathon, ultra, or pushing for elite placements.
                 </p>
 
                 <ul className="mt-9 border-t border-snow/20">

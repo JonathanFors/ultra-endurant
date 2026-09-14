@@ -20,7 +20,7 @@ const KEYS = [
     "You're a whole person with a life to live. Family, work, illness and time off are counted from day one, not treated as things that got in the way.",
   ],
   [
-    "Direct WhatsApp access",
+    "Direct WhatsApp reach",
     "You get Jonathan's number. Message your coach when something comes up, rather than saving it for a weekly slot.",
   ],
 ] as const;

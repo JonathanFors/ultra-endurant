@@ -5,26 +5,26 @@ import { siteLinks } from "@/lib/site";
 
 const FOR = [
   [
-    "You're going long",
-    "A first ultra, or a next hundred-miler. Either end of that range is fine — the distance you're chasing matters less than that you're actually chasing one.",
+    "You want someone who sees the full picture",
+    "Metrics and numbers matter, but ultimately the big picture is what makes the difference. Consistency over one-off perfection.",
   ],
   [
-    "You have a life already",
-    "A job, people who depend on you, and nowhere near enough hours. That's the normal case here, not the awkward one.",
+    "You're in it for the long game",
+    "Anyone can push hard once or twice, but fewer can do it for a lifetime. You're training for a lifelong active, strong body.",
   ],
   [
-    "You've watched a plan fall apart",
-    "Month two, usually. You don't need more discipline — you need a plan built for the week you actually get.",
+    "You have a busy life outside of running",
+    "Running means a lot, but so does your family, work, friends, and other obligations. ",
   ],
   [
-    "You want a coach who asks",
-    "About your sleep, your stress, the thing at work that's eating you. If that sounds like too much, we're not going to get on.",
+    "You want a coach who's proactive",
+    "Your coach should be someone who's in it with you, not someone you chase for days just to get a response.",
   ],
 ] as const;
 
 const NOT_FOR = [
   [
-    "You want a plan file and silence",
+    "You want just a workout calendar",
     "If what you want is a PDF and no conversation, I'm the wrong coach and an expensive way to get one. There are cheaper places.",
   ],
   [
@@ -32,8 +32,8 @@ const NOT_FOR = [
     "If the answer to every setback is push harder, we'll spend the whole time arguing. I'll ask you to back off, and I'll mean it.",
   ],
   [
-    "You want someone to just tell you what to do",
-    "This works when you say what's actually going on. If you'd rather not be asked, the plan can't respond to anything.",
+    "All your focus on are the metrics",
+    "Someone once said numbers don't lie, well... in running sometimes they do and looking at the bigger picture is equally important.",
   ],
 ] as const;
 

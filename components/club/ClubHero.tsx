@@ -20,7 +20,7 @@ const KEYS = [
     "You're a whole person with a life to live. Family, work, illness and time off are counted from day one, not treated as things that got in the way.",
   ],
   [
-    "Direct WhatsApp access",
+    "24/7 messaging & calls",
     "You get Jonathan's number. Message your coach when something comes up, rather than saving it for a weekly slot.",
   ],
 ] as const;
@@ -66,7 +66,7 @@ export default function ClubHero() {
             </div>
 
             <h1 className="font-club relative z-10 mt-8 text-snow sm:mt-10">
-              <span className="block text-club-xl">Train for the ultra.</span>
+              <span className="block text-club-xl">Go the distance</span>
               {/* The tape can't wrap — it's one skewed box — so this line is
                   sized below text-club-xl to hold on the narrowest viewport.
                   The leading override is what makes the tape cover the whole
@@ -75,15 +75,12 @@ export default function ClubHero() {
                   the glyphs, dropping caps and tails outside the red. 1.15 is
                   the threshold; 1.2 leaves a margin. */}
               <span className="mt-3 block text-[clamp(1.95rem,6.6vw,5.75rem)] leading-[1.2] sm:mt-4">
-                <span className="club-tape">Keep your life.</span>
+                <span className="club-tape">1:1 & group coaching</span>
               </span>
             </h1>
 
             <p className="mt-10 max-w-2xl text-lg leading-relaxed text-snow-dim">
-              I coach runners training for a first ultra, or a next
-              hundred-miler. Most of them have jobs, families and not enough
-              hours in the week. We build the training around that life instead
-              of asking you to clear space for it.
+              While most coaches focus on the details and lose track of the bigger picture – we do the opposite. Your life, work, family, and other obligations come first as we create a long-lasting training philosophy together.
             </p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center">

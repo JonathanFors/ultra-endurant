@@ -59,16 +59,16 @@ export const appFeatures = [
     "Finished sessions get read back to you: what the numbers did, and what changed since last time.",
   ],
   [
-    "Calls, live",
-    "Weekly video calls happen in the app. Nothing to install, no link to lose.",
+    "Calls & messaging",
+    "All calls, 1:1 and group messaging happens directly in the app.",
   ],
   [
-    "Everything said, kept",
-    "Notes and transcripts from every call and WhatsApp thread, searchable. You never have to remember what we agreed.",
+    "Look up anything",
+    "Analyse workouts, search through call transcripts, or find that one message from weeks ago. The smart AI assistant got you covered.",
   ],
   [
-    "Your links, together",
-    "Plans, races, forms, whatever the week needs — in one place instead of five.",
+    "No context-switching",
+    "Plans, races, forms, whatever the week needs in one place instead of five.",
   ],
 ] as const;
 
@@ -77,8 +77,8 @@ export const appFeatures = [
  * This is a position, not a disclaimer — say it in Jonathan's voice.
  */
 export const aiStance = {
-  heading: "The AI doesn't give advice. That's deliberate.",
-  body: "It reads your completed sessions and tells you what happened in them. It will not tell you to push, to back off, to run through something, or to change your plan — that's my job, and I think handing health advice to a model is genuinely dangerous. The analysis is a mirror, not a coach.",
+  heading: "to provide the best possible coaching experience for you",
+  body: "While we could split things into a WhatsApp chat, a Skool community, and a separate workout calendar the reality is that would be a pretty horrible experience. Keeping everything under one roof means you'll find what you're looking for quicker, and I can coach you much better.",
 } as const;
 
 export const siteLinks = {
@@ -152,7 +152,7 @@ export const record = [
   },
   {
     figure: "MDS",
-    label: "Placed among the elites, Legendary",
+    label: "Finished with the elite runners in MDS Legendary 2025",
   },
   {
     figure: "744 km",
@@ -203,10 +203,10 @@ export const oneToOne = {
   price: "€200",
   period: "/mo",
   includes: [
-    "24/7 access to me on WhatsApp",
+    "Call & message me anytime in the Ultra Endurant App",
     "A weekly 1:1 call",
-    "No template workouts — every session written for you",
-    "Extra calls whenever you need them",
+    "Custom workout plans made only for you",
+    "Detailed video library showing every workout movement",
     "No minimum period. Cancel anytime",
   ],
 } as const;

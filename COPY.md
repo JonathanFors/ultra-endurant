@@ -108,11 +108,11 @@ coaching like" instead of "what does he look like".
 > Ultra-endurance running coach · UESCA-certified
 
 > ▸ **Headline** — two lines at two sizes. Line 2 sits on the red tape and **cannot wrap**, so keep it under ~16 characters.
-> Train for the ultra.
-> **Keep your life.**
+> Go the distance
+> **1:1 & group coaching**
 
 > ▸ **Body**
-> I coach runners training for a first ultra, or a next hundred-miler. Most of them have jobs, families and not enough hours in the week. We build the training around that life instead of asking you to clear space for it.
+> While most coaches focus on the details and lose track of the bigger picture – we do the opposite. Your life, work, family, and other obligations come first as we create a long-lasting training philosophy together.
 
 | ▸ Field | Current text |
 | --- | --- |

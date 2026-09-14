@@ -33,7 +33,7 @@ import {
  * ⚠️ Open: no payment provider is named in §8, because none has been confirmed
  * — the clause says "the method we agree" instead. Confirm it and name it.
  *
- * Note `groupCoaching.launch` is already "end of September" — the month is in
+ * Note `groupCoaching.launch` is already "opens end of September" — the month is in
  * the value, so it takes a bare year after it, not "of September 2026".
  *
  * The wording is mirrored in `COPY.md` §17.

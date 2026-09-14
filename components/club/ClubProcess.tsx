@@ -6,7 +6,7 @@ import { ArrowIcon } from "@/components/icons";
 const STEPS = [
   [
     "The intro call",
-    "Thirty minutes, free. You tell me where you are and what you're aiming at; I tell you whether I think I can help.",
+    "20 minutes, free. You tell me where you are and what you're aiming at; I tell you whether I think I can help.",
   ],
   [
     "Your full picture",
@@ -52,7 +52,7 @@ export default function ClubProcess() {
         <Reveal className="mt-10 sm:mt-12">
           <h2 className="font-club text-club-lg max-w-[20ch] text-snow">
             The plan will change, because{" "}
-            <span className="text-red-bright">your week does.</span>
+            <span className="text-red-bright">in 4 steps</span>
           </h2>
         </Reveal>
 
@@ -92,12 +92,10 @@ export default function ClubProcess() {
           <div className="club-cut-br flex flex-col items-start justify-between gap-8 bg-red p-8 text-ink sm:flex-row sm:items-center sm:p-12">
             <div className="max-w-2xl">
               <h3 className="font-club text-club-md">
-                There&apos;s no pitch at the end of the call.
+                Let's chat, I promise I won't pitch anything.
               </h3>
               <p className="mt-4 max-w-xl leading-relaxed">
-                Thirty minutes, free, and you leave with my honest read on where
-                you are and what your race actually needs. If I&apos;m not the
-                right coach for it, I&apos;ll tell you on the call.
+                20 minutes, free, and you leave with my honest read on where you are and what your race actually needs. If I'm not the right coach for it, I'll tell you on the call.
               </p>
             </div>
             <a

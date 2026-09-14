@@ -137,14 +137,14 @@ Six items, repeated. Keep them short — they scroll past.
 
 1. 1:1 Ultra Coaching
 2. UESCA Certified
-3. First Ultra to 100 Miles
+3. Human-only coaching
 4. Holistic Health First
 5. 744 km Across Portugal 🔒
 6. Remote — Worldwide
 
 ---
 
-## 2 · Section 01 — Who you'd work with
+## 2 · Section 01 — your coach
 
 The introduction, in Jonathan's own voice, once and at length. This replaced the
 old two-panel "The approach" section: the holistic-health argument is now a hero
@@ -154,7 +154,7 @@ What's left is the part that only works as one person talking.
 | ▸ Field | Current text |
 | --- | --- |
 | Section number | 01 |
-| Section label | Who you'd work with |
+| Section label | your coach |
 
 > ▸ **Headline** — the tape sits on "plan." and cannot wrap.
 > You're a person, not a **plan.**

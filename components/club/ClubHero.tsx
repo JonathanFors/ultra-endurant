@@ -29,7 +29,7 @@ const KEYS = [
 const TICKER = [
   "1:1 Ultra Coaching",
   "UESCA Certified",
-  "First Ultra to 100 Miles",
+  "Human-only coaching",
   "Holistic Health First",
   `${facts.ranKm} km Across Portugal`,
   "Remote — Worldwide",

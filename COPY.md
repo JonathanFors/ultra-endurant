@@ -199,7 +199,7 @@ athlete.
 > Everything in **one place.**
 
 > ▸ **Body**
-> Every athlete I coach works through the Ultra Endurant App. It's where the plan lives, where we talk, and where everything we've already said stays findable.
+> Being coached by me means having full access to the Ultra Endurant App. One place for your workout plans, messaging, calls, smart analytics, and even call transcripts.
 
 ### Feature cards
 

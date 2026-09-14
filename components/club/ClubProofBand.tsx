@@ -9,7 +9,7 @@ import { facts, record } from "@/lib/site";
  * This used to be the Portugal band alone. Portugal is still here and still
  * ends on the failed first attempt, because a record that only lists wins
  * invites the reader to discount all of it. But the run is now the last of
- * three credentials rather than the whole case: ITRA and MDS say he races at a
+ * three credentials rather than the whole case: ITRA and Elite runner say he races at a
  * level, Portugal says he can suffer at one.
  *
  * ⚠️ The ITRA and MDS claims are unsourced — see `record` in lib/site.ts.

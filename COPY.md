@@ -129,7 +129,7 @@ they mean.
 | --- | --- |
 | Science-backed coaching | Your coach is UESCA-certified with years behind him, and he doesn't only go on what worked for him — the practice is grounded in the research. |
 | Holistic approach | You're a whole person with a life to live. Family, work, illness and time off are counted from day one, not treated as things that got in the way. |
-| Direct WhatsApp access | You get Jonathan's number. Message your coach when something comes up, rather than saving it for a weekly slot. |
+| Direct WhatsApp reach | You get Jonathan's number. Message your coach when something comes up, rather than saving it for a weekly slot. |
 
 ### Red scrolling ticker
 

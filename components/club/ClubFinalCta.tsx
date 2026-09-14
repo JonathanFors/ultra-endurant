@@ -20,15 +20,13 @@ export default function ClubFinalCta() {
 
         <Reveal className="mt-8">
           <h2 className="font-club text-club-xl max-w-[14ch]">
-            Tell me about your race.
+            Tell me about your goals.
           </h2>
         </Reveal>
 
         <Reveal className="mt-10 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between" delay={70}>
           <p className="max-w-lg text-lg leading-relaxed">
-            Thirty minutes, free, and nothing to buy at the end. If we&apos;re
-            a fit, we build from there. If we&apos;re not, you&apos;ll still
-            leave knowing what your next step is.
+            20 minutes, free, and nothing to buy at the end. If we're a fit, we build from there. If we're not, you'll still leave knowing what your next step is.
           </p>
           <a
             href={siteLinks.booking}

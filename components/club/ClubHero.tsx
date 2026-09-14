@@ -12,16 +12,16 @@ import SlashMark from "@/components/SlashMark";
  */
 const KEYS = [
   [
-    "Science-backed coaching",
-    "Your coach is UESCA-certified with years behind him, and he doesn't only go on what worked for him — the practice is grounded in the research.",
+    "Human-only coaching",
+    "Jonathan Fors is the man behind the brand and is the only one doing the work. Because real, sustainable coaching requires a human-first approach.",
   ],
   [
     "Holistic approach",
     "You're a whole person with a life to live. Family, work, illness and time off are counted from day one, not treated as things that got in the way.",
   ],
   [
-    "24/7 messaging & calls",
-    "You get Jonathan's number. Message your coach when something comes up, rather than saving it for a weekly slot.",
+    "A dedicated app",
+    "All your workouts, calls and messaging with your coach, and smart workout analytics are found in one app. ",
   ],
 ] as const;
 

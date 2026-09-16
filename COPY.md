@@ -424,7 +424,7 @@ label, the logo is byline-sized, and the subscriber count is on the page.
 | Section number | 06 |
 | Section label | The free newsletter |
 | Beside the logo | An email newsletter |
-| Subscriber count 🔒 | 250+ · Runners already reading |
+| Subscriber count 🔒 | 400+ · Runners already reading |
 
 > ▸ **Headline**
 > Three emails a week. **Free forever.**

@@ -58,10 +58,12 @@ export default function ClubHero() {
               a half and push the keys out of sight behind an empty band. */}
           <div className="flex min-h-[max(30rem,72svh)] max-h-[44rem] flex-col items-center justify-center text-center">
             {/* Eyebrow */}
-            <div className="flex items-center gap-3">
+            <div className="flex max-w-full items-center justify-center gap-2.5 px-4 text-center sm:gap-3">
               <SlashMark className="h-4 w-[1.1rem] shrink-0 text-red" />
-              <p className="club-label text-snow-dim">
-                Ultra-endurance running coach · UESCA-certified
+              <p className="club-label flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-snow-dim">
+                <span>Ultra-endurance running coach</span>
+                <span className="hidden sm:inline" aria-hidden="true">·</span>
+                <span>UESCA-certified</span>
               </p>
             </div>
 

@@ -46,7 +46,7 @@ export default function ClubOffers() {
 
         <Reveal className="mt-10 sm:mt-12">
           <h2 className="font-club text-club-lg max-w-[18ch] text-ink">
-            Two ways to work <span className="club-tape">together.</span>
+            Let me coach you. <span className="club-tape">Get started below.</span>
           </h2>
         </Reveal>
 
@@ -165,6 +165,7 @@ export default function ClubOffers() {
                     action="Notify me"
                     utmMedium={subscribeSource.groupWaitlist}
                     waitlistDetails
+                    tone="paper"
                     className="mt-5"
                   />
                 </div>

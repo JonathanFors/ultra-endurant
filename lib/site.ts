@@ -105,7 +105,7 @@ export const siteLinks = {
   // in a bio or at the end of an edition, where the homepage anchor buries the
   // signup under three other sections.
   newsletter: "/newsletter",
-  instagram: "https://www.instagram.com/jonathans.pov/",
+  instagram: "https://www.instagram.com/jon.runcoach/",
   linkedin: "https://www.linkedin.com/in/jonathanfors/",
   // ⚠️ Moved to the new domain with the Sept 2026 rename. The old address —
   // coach@ on the old domain — is printed in the published terms, in the privacy

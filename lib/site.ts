@@ -33,7 +33,7 @@ export const brand = {
    * business name is the one thing that can make a one-person practice look
    * like a marketplace, which is the opposite of what's being sold.
    */
-  attribution: "Ultra Endurant is one coach: Jonathan Fors.",
+  attribution: "Created and run by Jonathan Fors",
 } as const;
 
 /**
@@ -151,12 +151,12 @@ export const record = [
     label: "Ranked worldwide on ITRA",
   },
   {
-    figure: "MDS",
-    label: "Finished with the elite runners in MDS Legendary 2025",
+    figure: "Elite runner",
+    label: "Ranked as an elite runner in MDS Legendary 2025",
   },
   {
     figure: "744 km",
-    label: "Longest run — Portugal's coast",
+    label: "Longest run (Project Portugal)",
   },
 ] as const;
 
@@ -246,10 +246,10 @@ export const shuffleClub = {
    * up to the next hundred — most of these arrived through the group-coaching
    * waitlist rather than the newsletter form, and one list is what they share.
    */
-  subscribers: 250,
+  subscribers: 400,
   editions: [
-    ["Tuesday", "The science", "What the research actually says."],
-    ["Friday", "My take", "The same subject from the road, in my own words."],
+    ["Tuesday", "The science", "What the research says"],
+    ["Friday", "My take", "My take as an experienced coach"],
     ["Sunday", "Your questions", "Reader questions, answered."],
   ],
 } as const;

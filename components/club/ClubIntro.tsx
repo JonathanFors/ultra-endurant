@@ -21,14 +21,14 @@ export default function ClubIntro() {
     >
       <div className="mx-auto w-full max-w-[1400px] px-5 py-20 sm:px-8 sm:py-28">
         {/* Index row: hollow numeral, label, slash rule running to the edge */}
-        <Reveal className="flex items-center gap-5">
-          <span className="club-numeral club-hollow shrink-0 text-6xl text-ink sm:text-7xl">
+        <Reveal className="flex flex-wrap items-center gap-3 sm:flex-nowrap sm:gap-5">
+          <span className="club-numeral club-hollow shrink-0 text-5xl text-ink sm:text-7xl">
             01
           </span>
           <span className="club-label shrink-0 text-ink">your coach</span>
           <span
             aria-hidden="true"
-            className="club-slashes h-7 flex-1 text-red [--bar:5px] [--gap:13px]"
+            className="club-slashes h-6 basis-full sm:h-7 sm:basis-auto sm:flex-1 text-red [--bar:5px] [--gap:13px]"
           />
         </Reveal>
 

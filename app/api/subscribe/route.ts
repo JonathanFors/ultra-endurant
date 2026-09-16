@@ -9,13 +9,12 @@ import { beehiivFields, brand, experienceLevels } from "@/lib/site";
  * browser, and beehiiv sits behind Cloudflare, which blocks cross-origin
  * requests from a page anyway.
  *
- * The group waitlist forms also send a first name, which is written to a
- * beehiiv custom field (see `FIRST_NAME_FIELD`). The newsletter forms send an
- * address and nothing else.
+ * Both forms (newsletter and group waitlist) send a first name, which is
+ * written to beehiiv's First Name custom field. The group waitlist also sends
+ * running experience.
  *
- * Needs a beehiiv API key in the environment (beehiiv → Settings → API).
- * Without one this returns 503 and the form falls back to the magic link, so
- * signups keep working either way.
+ * A hidden honeypot field is checked: automated bots that fill in the trap
+ * are quietly accepted with a 200 OK without forwarding anything to beehiiv.
  */
 
 /**
@@ -30,7 +29,7 @@ const PUBLICATION_ID =
   "pub_7acd9c66-dec5-40ec-990a-bfd12f0e29e0";
 
 /**
- * The beehiiv custom fields the group waitlist writes to.
+ * The beehiiv custom fields the forms write to.
  *
  * Each has to match a custom field that already exists on the publication
  * (beehiiv → Audience → Custom fields), name for name — beehiiv matches these
@@ -65,22 +64,22 @@ export async function POST(request: Request) {
   let utmMedium: unknown;
   let firstName: unknown;
   let experience: unknown;
+  let hp: unknown;
   try {
-    ({ email, utmMedium, firstName, experience } = await request.json());
+    ({ email, utmMedium, firstName, experience, hp } = await request.json());
   } catch {
     return NextResponse.json({ error: "bad_request" }, { status: 400 });
+  }
+
+  // Honeypot check: if the hidden field is filled, silently return ok without subscribing
+  if (typeof hp === "string" && hp.trim().length > 0) {
+    return NextResponse.json({ ok: true });
   }
 
   if (typeof email !== "string" || !LOOKS_LIKE_EMAIL.test(email.trim())) {
     return NextResponse.json({ error: "invalid_email" }, { status: 400 });
   }
 
-  /**
-   * Only the waitlist forms send these two, so absent ones are normal rather
-   * than an error — the newsletter forms have no such fields. A blank string is
-   * treated the same as absent so a whitespace-only value never lands in
-   * beehiiv as somebody's name.
-   */
   const name =
     typeof firstName === "string"
       ? firstName.trim().slice(0, MAX_NAME_LENGTH)

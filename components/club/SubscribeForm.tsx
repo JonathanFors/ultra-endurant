@@ -11,19 +11,10 @@ type Props = {
   /** `utm_medium` value: what tells the two forms apart in beehiiv. */
   utmMedium: string;
   /**
-   * Ask the two waitlist questions — first name, and running experience —
-   * alongside the address.
+   * Ask the running experience question alongside first name and address.
    *
-   * On for the group coaching waitlist, off for the newsletter. The waitlist
-   * ends in a draw, five personal emails and groups that have to be matched on
-   * level, so both answers do work there; the newsletter only ever needs
-   * somewhere to send an edition.
-   *
-   * Both are required where they appear. An optional question on a three-field
-   * form is mostly left blank, and a half-filled list can't be segmented on,
-   * which is the whole point of asking. They ride along to beehiiv as custom
-   * fields — see `app/api/subscribe/route.ts` and `beehiivFields` in
-   * `lib/site.ts`.
+   * On for the group coaching waitlist, off for the newsletter. Both forms ask
+   * for first name; only the waitlist requires experience level.
    */
   waitlistDetails?: boolean;
   /**
@@ -52,13 +43,7 @@ type State = "idle" | "sending" | "done" | "error";
  * Submits to our own /api/subscribe, which talks to beehiiv server-side, so the
  * signup completes in place — no redirect to beehiiv's confirmation page.
  *
- * The markup is still a real <form> pointed at beehiiv's magic link, and that
- * link is used two ways: as the no-JavaScript path, and as the fallback if the
- * API call fails (no key configured, beehiiv down). Signups therefore keep
- * working in every case; only the nicest path needs the key. Note the magic
- * link takes an address and nothing else, so on that path the two waitlist
- * answers are lost — the address, which is the thing that can't be recovered
- * later, always gets through.
+ * Includes a hidden honeypot field (`organization_url`) to catch spam bots.
  */
 export default function SubscribeForm({
   action,
@@ -105,10 +90,9 @@ export default function SubscribeForm({
     const email = fields.get("email");
     if (typeof email !== "string" || !email) return;
 
-    // Only present on the waitlist forms. The newsletter forms send neither,
-    // and the endpoint then leaves both custom fields alone.
     const firstName = fields.get("first_name");
     const experience = fields.get("experience_level");
+    const hp = fields.get("organization_url");
 
     setState("sending");
     try {
@@ -120,6 +104,7 @@ export default function SubscribeForm({
           utmMedium,
           firstName: typeof firstName === "string" ? firstName : undefined,
           experience: typeof experience === "string" ? experience : undefined,
+          hp: typeof hp === "string" ? hp : undefined,
         }),
       });
       if (res.ok) {
@@ -195,9 +180,20 @@ export default function SubscribeForm({
         data-cta-location={location ?? utmMedium}
         className="flex w-full flex-col gap-2.5"
       >
-        {waitlistDetails && (
-          // Name and level share a row from 640px up: two short answers, and
-          // stacking them would put three full-width rows above the button.
+        {/* Honeypot field: invisible to real users, catches bots */}
+        <div aria-hidden="true" className="absolute -left-[9999px] top-auto h-0 w-0 overflow-hidden opacity-0">
+          <label htmlFor={`${id}-org`}>Website</label>
+          <input
+            id={`${id}-org`}
+            type="text"
+            name="organization_url"
+            tabIndex={-1}
+            autoComplete="off"
+          />
+        </div>
+
+        {waitlistDetails ? (
+          // Waitlist form: First Name and Experience level side by side
           <div className="flex flex-col gap-2.5 sm:flex-row">
             <label htmlFor={`${id}-name`} className="sr-only">
               First name
@@ -208,8 +204,6 @@ export default function SubscribeForm({
               name="first_name"
               required
               autoComplete="given-name"
-              // beehiiv stores this as free text; the cap is only here so a
-              // paste-bomb can't reach the API. Matches the server's.
               maxLength={80}
               placeholder="First name"
               className={`${fieldClass} sm:flex-1`}
@@ -224,9 +218,6 @@ export default function SubscribeForm({
                 name="experience_level"
                 required
                 defaultValue=""
-                // `invalid:` is the empty first option still being selected —
-                // the same greyed-out reading a placeholder gives a text field,
-                // which a <select> has no way to express on its own.
                 className={`${fieldClass} w-full appearance-none pr-11 ${
                   onInk ? "invalid:text-snow-dim" : "invalid:text-ink-faint"
                 }`}
@@ -235,8 +226,6 @@ export default function SubscribeForm({
                   Experience level
                 </option>
                 {experienceLevels.map((level) => (
-                  // Coloured explicitly: the open dropdown is drawn by the OS,
-                  // which won't inherit the field's colours on a dark surface.
                   <option key={level} value={level} className="bg-paper text-ink">
                     {level}
                   </option>
@@ -248,6 +237,23 @@ export default function SubscribeForm({
                 }`}
               />
             </div>
+          </div>
+        ) : (
+          // Newsletter form: First Name
+          <div>
+            <label htmlFor={`${id}-name`} className="sr-only">
+              First name
+            </label>
+            <input
+              id={`${id}-name`}
+              type="text"
+              name="first_name"
+              required
+              autoComplete="given-name"
+              maxLength={80}
+              placeholder="First name"
+              className={`${fieldClass} w-full`}
+            />
           </div>
         )}
 

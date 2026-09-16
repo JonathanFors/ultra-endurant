@@ -32,7 +32,7 @@ const NOT_FOR = [
     "If the answer to every setback is push harder, we'll spend the whole time arguing. I'll ask you to back off, and I'll mean it.",
   ],
   [
-    "All your focus on are the metrics",
+    "You only care about metrics",
     "Someone once said numbers don't lie, well... in running sometimes they do and looking at the bigger picture is equally important.",
   ],
 ] as const;

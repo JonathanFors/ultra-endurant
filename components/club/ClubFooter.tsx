@@ -144,7 +144,7 @@ export default function ClubFooter() {
               </nav>
             </div>
             <p>
-              {facts.ranKm} km down the coast of Portugal for {facts.cause}.
+              Let&apos;s get runnin&apos;
             </p>
           </div>
           {/* Two separate facts, and the order matters. `brand.attribution`

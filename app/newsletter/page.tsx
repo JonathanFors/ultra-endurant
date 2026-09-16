@@ -69,7 +69,7 @@ const WEEK = [
   {
     day: "Friday",
     title: "My take",
-    body: "The same subject from the road: what I actually do about it, and why. Marked as opinion, so you always know which half you're reading.",
+    body: "My take on the subject as an experienced coach. Marked as opinion, so you always know which half you're reading.",
   },
   {
     day: "Sunday",
@@ -87,7 +87,7 @@ const TERMS = [
   },
   {
     figure: "03",
-    title: "Three a week, not three a year",
+    title: "Three editions per week",
     body: "Tuesday, Friday and Sunday. Each one is a few minutes on a phone — short enough to actually read, long enough to be worth reading.",
   },
   {
@@ -140,17 +140,14 @@ export default function NewsletterPage() {
                     the caps fall outside the red — invisible, ink on ink. It
                     also can't wrap, so it's sized to hold one line at 320px. */}
                 <h1 className="mt-8 font-club text-[clamp(2.5rem,7vw,4.25rem)] text-snow">
-                  <span className="block">Three editions a week.</span>
+                  <span className="block">The newsletter for</span>
                   <span className="mt-2.5 block text-[clamp(2.3rem,6.6vw,4rem)] leading-[1.2]">
-                    <span className="club-tape">Free forever.</span>
+                    <span className="club-tape">ultra runners</span>
                   </span>
                 </h1>
 
                 <p className="mt-7 max-w-xl text-lg leading-relaxed text-snow-dim">
-                  One subject a week, from three sides: what the research
-                  actually says, what I think about it after running on it, and
-                  whatever you send back. No fee, and nothing to buy at the end
-                  of it.
+                  One subject a week, from three perspectives. First, what the science says, then my take as an experienced coach, and finally readers questions.
                 </p>
 
                 {/* Form, high and on the reading side — the first interactive
@@ -161,30 +158,35 @@ export default function NewsletterPage() {
                     action="Subscribe"
                     utmMedium={subscribeSource.newsletter}
                     location="newsletter-hero"
-                    note="Unsubscribe whenever you like — there's a link at the foot of every edition."
+                    note="Unsubscribe whenever you like."
                     successNote="You're in. The next edition lands on Tuesday, Friday or Sunday, whichever comes first."
                     className="mt-4"
                   />
                 </div>
               </div>
 
-              {/* The number, as the graphic. Hollow numeral, same treatment as
-                  the section indexes on the homepage. */}
+              {/* Certified coach credential card with checkmark badge */}
               <div className="lg:col-span-4 lg:col-start-9 lg:self-center">
                 <div className="border-2 border-red/40 p-6 sm:p-8">
-                  <p
-                    aria-hidden="true"
-                    className="club-numeral club-hollow text-[clamp(5rem,17vw,11rem)] text-red-bright"
-                    style={{ WebkitTextStrokeWidth: "clamp(2px, 0.4vw, 4px)" }}
-                  >
-                    03
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-red text-ink sm:h-20 sm:w-20">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-9 w-9 sm:h-11 sm:w-11"
+                      aria-hidden="true"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                  <p className="club-label mt-6 text-sm font-bold text-snow">
+                    UESCA Certified
                   </p>
-                  <p className="club-label mt-4 text-[0.66rem] text-snow-dim">
-                    Editions every week
-                  </p>
-                  <p className="mt-4 border-t border-snow/20 pt-4 text-sm leading-relaxed text-snow-dim">
-                    Free means free. No paid tier, and nothing sold at the end
-                    of an edition.
+                  <p className="mt-3 border-t border-snow/20 pt-4 text-sm leading-relaxed text-snow-dim">
+                    Shuffle Club is written by Jonathan Fors, a UESCA certified ultra running coach.
                   </p>
                 </div>
               </div>
@@ -196,7 +198,7 @@ export default function NewsletterPage() {
         <section className="club border-t-2 border-red bg-paper text-ink">
           <div className="mx-auto w-full max-w-[1400px] px-5 py-16 sm:px-8 sm:py-20">
             <Reveal className="flex items-center gap-4">
-              <span className="club-label shrink-0 text-ink">Your week</span>
+              <span className="club-label shrink-0 text-ink">What we cover</span>
               <span
                 aria-hidden="true"
                 className="club-slashes h-6 flex-1 text-red [--bar:5px] [--gap:13px]"
@@ -205,7 +207,7 @@ export default function NewsletterPage() {
 
             <Reveal className="mt-8" delay={60}>
               <h2 className="font-club text-club-md max-w-[22ch] text-ink">
-                The same subject, <span className="text-red">three times.</span>
+                Three deep dives, <span className="text-red">from three angles.</span>
               </h2>
             </Reveal>
 
@@ -255,7 +257,7 @@ export default function NewsletterPage() {
 
             <Reveal className="mt-7" delay={60}>
               <p className="max-w-2xl text-lg leading-relaxed text-snow-dim">
-                Tuesday&apos;s science comes out of the coaching course material
+                Tuesday&apos;s science comes out of the coaching UESCA course material
                 I certified on, with the studies behind it named. Friday is my
                 own opinion and it says so — you shouldn&apos;t have to guess
                 which of the two you&apos;re reading. Every term gets explained

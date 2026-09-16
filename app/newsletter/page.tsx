@@ -161,7 +161,7 @@ export default function NewsletterPage() {
                     action="Subscribe"
                     utmMedium={subscribeSource.newsletter}
                     location="newsletter-hero"
-                    note="One field, and that's the whole signup. Unsubscribe whenever you like — there's a link at the foot of every edition."
+                    note="Unsubscribe whenever you like — there's a link at the foot of every edition."
                     successNote="You're in. The next edition lands on Tuesday, Friday or Sunday, whichever comes first."
                     className="mt-4"
                   />
@@ -370,9 +370,9 @@ export default function NewsletterPage() {
                 </Reveal>
                 <Reveal className="mt-5" delay={60}>
                   <p className="max-w-md leading-relaxed text-ink-soft">
-                    One email address is the whole signup. If it turns out not
-                    to be for you, the unsubscribe link is at the foot of every
-                    edition and I won&apos;t hold it against you.
+                    If it turns out not to be for you, the unsubscribe link is
+                    at the foot of every edition and I won&apos;t hold it
+                    against you.
                   </p>
                 </Reveal>
               </div>

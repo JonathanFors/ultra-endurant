@@ -95,6 +95,8 @@ export const siteLinks = {
    */
   booking:
     "https://app.ultraendurant.com/book/coachjonathan/discovery",
+  // Dedicated 1:1 coaching page
+  coaching: "/coaching",
   // The athlete-intake page is intentionally NOT linked anywhere on the site
   // (noindex). Jonathan sends this URL manually to athletes he has spoken to.
   intake: "/athlete-intake",
@@ -264,15 +266,13 @@ export const shuffleClub = {
 export const clubSections = [
   { label: "Approach", href: "/#approach" },
   { label: "How it works", href: "/#coaching" },
-  { label: "Coaching", href: "/#coaching-options" },
 ] as const;
 
 /**
- * The two standalone signup pages. Real routes rather than anchors, so these
- * are the only nav items that can be the current page — the nav marks them
- * with aria-current, the section anchors above can never match.
+ * Dedicated pages on the site.
  */
 export const clubPages = [
+  { label: "1:1 Coaching", href: siteLinks.coaching },
   { label: "Group waitlist", href: siteLinks.waitlist },
   { label: "Newsletter", href: siteLinks.newsletter },
 ] as const;

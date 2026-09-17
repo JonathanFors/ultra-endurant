@@ -14,10 +14,9 @@ import {
  * Site footer.
  *
  * Three columns, split by what the link is rather than where it goes: "Page"
- * is the homepage's own sections, "Start" is the three things a reader can
- * actually do — book, join the waitlist, subscribe — and "Elsewhere" is
- * everything that leaves the site. The two signup pages sit under Start rather
- * than Page because they're actions, not sections to read.
+ * is the homepage's own sections, "Start" is the things a reader can
+ * actually do — 1:1 coaching, book a call, join the waitlist, subscribe — and
+ * "Elsewhere" is everything that leaves the site.
  */
 export default function ClubFooter() {
   return (
@@ -52,6 +51,14 @@ export default function ClubFooter() {
             <div>
               <p className="club-label text-snow-dim">Start</p>
               <ul className="mt-4 flex flex-col gap-2.5">
+                <li>
+                  <Link
+                    href={siteLinks.coaching}
+                    className="text-snow transition-colors hover:text-red-bright"
+                  >
+                    1:1 Coaching
+                  </Link>
+                </li>
                 <li>
                   <a
                     href={siteLinks.booking}

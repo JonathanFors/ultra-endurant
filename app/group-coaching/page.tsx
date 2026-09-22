@@ -285,12 +285,11 @@ export default function GroupCoachingPage() {
             &copy; {new Date().getFullYear()} {legal.company}. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <Link href={siteLinks.terms} className="hover:text-snow">
-              Terms
-            </Link>
-            <Link href={siteLinks.privacy} className="hover:text-snow">
-              Privacy
-            </Link>
+            {legalPages.map((page) => (
+              <Link key={page.href} href={page.href} className="hover:text-snow">
+                {page.label}
+              </Link>
+            ))}
             <a
               href={siteLinks.instagram}
               target="_blank"

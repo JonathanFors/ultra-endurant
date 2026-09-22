@@ -88,9 +88,9 @@ const sections: LegalSection[] = [
         <>
           The website at <strong>{brand.domain}</strong>, including the{" "}
           <A href={siteLinks.waitlist}>group coaching waitlist</A> and the{" "}
-          <A href={siteLinks.newsletter}>Shuffle Club newsletter</A> pages.
+          <A href={siteLinks.newsletter}>newsletter</A> pages.
         </>,
-        <>The Shuffle Club newsletter itself.</>,
+        <>The Ultra Endurant newsletter itself.</>,
         <>The intro call booking page and the athlete intake form.</>,
         <>
           Coaching — one-to-one and group — including the messages, calls and

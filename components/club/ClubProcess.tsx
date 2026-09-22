@@ -51,7 +51,7 @@ export default function ClubProcess() {
 
         <Reveal className="mt-10 sm:mt-12">
           <h2 className="font-club text-club-lg max-w-[20ch] text-snow">
-            The plan will change, because{" "}
+            Becoming a stronger athlete,{" "}
             <span className="text-red-bright">in 4 steps</span>
           </h2>
         </Reveal>

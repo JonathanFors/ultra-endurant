@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import SlashMark from "@/components/SlashMark";
@@ -27,6 +26,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [{ url: shareImage, width: 1200, height: 630, alt: title }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [shareImage],
+  },
 };
 
 const OFFER_INCLUDES = [
@@ -41,136 +46,191 @@ const OFFER_INCLUDES = [
 
 export default function GroupFounderOfferPage() {
   return (
-    <div className="club club-on-ink pt-16 sm:pt-[4.5rem] bg-ink text-snow">
+    <div className="club club-on-ink min-h-screen bg-ink pt-16 text-snow sm:pt-[4.5rem]">
       <main>
-        {/* Header Hero */}
-        <header className="relative isolate overflow-hidden border-b border-paper/10">
-          <div className="absolute inset-0 -z-10">
-            <Image
-              src="/images/hero-coast-runner.webp"
-              alt="Trail runner along Portugal coast"
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover object-center opacity-25"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-ink/90 via-ink/80 to-ink" />
-          </div>
+        {/* =============================================================
+            HERO: Founder Offer Headline & Guarantee Lockup
+            ============================================================= */}
+        <header className="relative overflow-hidden border-b-2 border-red/40 bg-ink pb-20 pt-12 sm:pb-28 sm:pt-16">
+          <div
+            aria-hidden="true"
+            className="club-slashes pointer-events-none absolute -right-20 -top-20 h-[50vw] max-h-[36rem] w-[55vw] max-w-[42rem] text-red/[0.12] [--bar:14px] [--gap:44px]"
+          />
 
-          <div className="mx-auto max-w-4xl px-4 pt-16 pb-20 sm:px-6 sm:pt-24 sm:pb-28 lg:px-8 text-center">
-            <Reveal>
-              <div className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 text-xs font-bold tracking-wider uppercase text-accent">
-                Founding Member Offer
-              </div>
-            </Reveal>
-
-            <Reveal className="mt-6" delay={60}>
-              <h1 className="club-display text-4xl sm:text-6xl font-bold tracking-tight text-snow uppercase">
-                50% off for 3 months.
-                <br />
-                <span className="text-paper/60">Zero risk.</span>
-              </h1>
-            </Reveal>
-
-            <Reveal className="mt-6 max-w-2xl mx-auto" delay={120}>
-              <p className="text-lg sm:text-xl leading-relaxed text-ink-soft">
-                You didn&apos;t get pulled in the 5 free spots draw, but because you joined the
-                waitlist early and shared your training goals, I want to make joining our
-                inaugural cohort as simple and risk-free as possible.
+          <div className="relative mx-auto w-full max-w-[1400px] px-5 sm:px-8">
+            <div className="flex items-center gap-3">
+              <SlashMark className="h-4 w-[1.1rem] shrink-0 text-red" />
+              <p className="club-label text-snow-dim">
+                Founding Member Offer · Private Waitlist Invitation
               </p>
-            </Reveal>
+            </div>
 
-            {/* Pricing Card */}
-            <Reveal className="mt-10 max-w-lg mx-auto rounded-3xl border border-paper/20 bg-paper/[0.04] p-8 text-center shadow-2xl backdrop-blur-sm" delay={180}>
-              <div className="flex items-center justify-center gap-3">
-                <span className="text-2xl text-paper/40 line-through font-semibold">€50</span>
-                <span className="text-6xl font-bold text-snow">€25</span>
-                <span className="text-sm font-semibold uppercase tracking-wider text-accent bg-accent/15 px-2.5 py-1 rounded-md">
-                  50% off
-                </span>
-              </div>
-              <p className="mt-2 text-sm text-ink-soft">
-                per month for your first 3 months &bull; then regular €50/mo
-              </p>
+            <div className="mt-8 grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
+              <div className="lg:col-span-7">
+                <h1 className="font-club text-[clamp(2.5rem,7vw,4.75rem)] leading-[0.88] text-snow">
+                  <span className="block">50% off for 3 months.</span>
+                  <span className="mt-3 block text-[clamp(2.1rem,6.2vw,4.25rem)] leading-[1.15]">
+                    <span className="club-tape">Zero risk.</span> 100% guarantee.
+                  </span>
+                </h1>
 
-              <div className="mt-6 rounded-xl border border-accent/30 bg-accent/5 p-4 text-xs text-paper/90 leading-relaxed text-left">
-                <strong className="block text-accent font-semibold mb-1">
-                  100% Satisfaction Guarantee:
-                </strong>
-                Join the group, get your custom plan, and jump on the weekly calls. If at any
-                point in your first 30 days you don&apos;t feel it&apos;s working for you, send me a message
-                and I will issue an immediate, full refund.
-              </div>
+                <p className="mt-8 max-w-2xl text-lg leading-relaxed text-snow-dim sm:text-xl">
+                  You didn&apos;t get pulled in the 5 free spots draw, but because you joined the
+                  waitlist early and shared your training goals, I want to make joining our
+                  inaugural cohort as simple and risk-free as possible.
+                </p>
 
-              <div className="mt-8">
-                <a
-                  href={siteLinks.booking15Min}
-                  className="club-btn-accent w-full inline-flex items-center justify-center gap-2 py-4 text-base font-bold uppercase tracking-wider text-snow transition-transform active:scale-[0.98]"
-                >
-                  Book 15-min call to claim spot
-                  <ArrowIcon className="h-4 w-4" />
-                </a>
-                <p className="mt-3 text-xs text-ink-soft">
-                  We check your schedule and place you in the right squad before taking any payment.
+                <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+                  <a
+                    href={siteLinks.booking15Min}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-club btn-club-red club-label group inline-flex items-center justify-center gap-3 px-8 py-5 text-center"
+                  >
+                    <span className="inline-flex items-center gap-3">
+                      Claim your spot — 15-min call
+                      <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </span>
+                  </a>
+                </div>
+
+                <p className="mt-4 text-xs text-snow-dim">
+                  We verify your schedule and squad fit on the call before collecting any payment.
                 </p>
               </div>
-            </Reveal>
+
+              {/* Founder Price Card */}
+              <div className="lg:col-span-5">
+                <div className="club-cut-br border-2 border-red/40 bg-ink p-8 sm:p-10 text-center">
+                  <p className="club-label text-[0.66rem] text-red-bright">
+                    Exclusive Waitlist Incentive
+                  </p>
+
+                  <div className="my-6 flex items-baseline justify-center gap-3">
+                    <span className="club-numeral text-3xl text-snow-dim/50 line-through">
+                      €50
+                    </span>
+                    <span className="club-numeral text-7xl text-snow">€25</span>
+                    <span className="club-numeral text-2xl text-snow-dim">/mo</span>
+                  </div>
+
+                  <p className="club-label text-[0.66rem] text-snow-dim">
+                    50% off for first 3 months · then standard €50/mo
+                  </p>
+
+                  <div className="mt-6 border-2 border-snow/20 bg-ink/70 p-5 text-left">
+                    <strong className="club-label block text-red-bright text-[0.7rem] mb-2">
+                      100% Satisfaction Guarantee
+                    </strong>
+                    <p className="text-sm text-snow-dim leading-relaxed">
+                      Join the squad, receive your custom plan, and jump on the weekly calls. If
+                      at any point in your first 30 days you feel it&apos;s not the right fit, message
+                      me and I will issue an immediate, full refund.
+                    </p>
+                  </div>
+
+                  <a
+                    href={siteLinks.booking15Min}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-club btn-club-red club-label group mt-6 inline-flex w-full items-center justify-center gap-3 py-4 text-center"
+                  >
+                    <span className="inline-flex items-center gap-3">
+                      Book 15-min call
+                      <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </header>
 
-        {/* What You Get */}
-        <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8 border-b border-paper/10">
-          <Reveal>
-            <span className="club-kicker">Everything Included</span>
-            <h2 className="club-display text-3xl sm:text-4xl font-bold uppercase text-snow mt-2">
-              The full Ultra Endurant coaching experience.
-            </h2>
-          </Reveal>
+        {/* =============================================================
+            WHAT'S INCLUDED: Comprehensive Offer Features
+            ============================================================= */}
+        <section className="relative overflow-hidden bg-ink py-20 sm:py-28 border-b-2 border-snow/15">
+          <div className="mx-auto w-full max-w-[1400px] px-5 sm:px-8">
+            <Reveal className="flex items-center gap-5">
+              <span className="club-numeral club-hollow shrink-0 text-6xl text-snow sm:text-7xl">
+                01
+              </span>
+              <span className="club-label shrink-0 text-snow">Everything Included</span>
+              <span
+                aria-hidden="true"
+                className="club-slashes h-7 flex-1 text-red [--bar:5px] [--gap:13px]"
+              />
+            </Reveal>
 
-          <Reveal className="mt-8" delay={60}>
-            <ul className="space-y-4">
-              {OFFER_INCLUDES.map((item) => (
-                <li
-                  key={item}
-                  className="flex items-start gap-3 rounded-xl border border-paper/10 bg-paper/[0.02] p-4 text-sm text-snow"
-                >
-                  <SlashMark className="h-4 w-4 text-accent shrink-0 mt-0.5" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </Reveal>
+            <Reveal className="mt-10 sm:mt-12">
+              <h2 className="font-club text-club-lg max-w-[22ch] text-snow">
+                The full Ultra Endurant <span className="club-tape">coaching experience</span>.
+              </h2>
+            </Reveal>
+
+            <Reveal className="mt-12" delay={60}>
+              <ul className="border-t-2 border-snow/20">
+                {OFFER_INCLUDES.map((item) => (
+                  <li
+                    key={item}
+                    className="flex items-baseline gap-4 border-b border-snow/15 py-4 sm:py-5"
+                  >
+                    <SlashMark className="h-3 w-[0.85rem] shrink-0 translate-y-0.5 text-red-bright" />
+                    <span className="text-base sm:text-lg text-snow">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
         </section>
 
-        {/* Why the 15-min call is required */}
-        <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8 border-b border-paper/10">
-          <Reveal>
-            <div className="rounded-2xl border border-paper/15 bg-paper/[0.03] p-8 sm:p-10">
-              <span className="club-kicker">No Blind Checkouts</span>
-              <h3 className="club-display text-2xl sm:text-3xl font-bold uppercase text-snow mt-2">
-                Why we talk first.
-              </h3>
-              <p className="mt-4 text-sm sm:text-base leading-relaxed text-ink-soft">
-                Each group is strictly capped at around five runners matched by timezone, weekly
-                training volume, and target race goals.
-              </p>
-              <p className="mt-3 text-sm sm:text-base leading-relaxed text-ink-soft">
-                Before collecting any money, we grab 15 minutes on a video call to ensure the
-                group call time works with your routine and that group coaching is genuinely the
-                best vehicle for your goals.
-              </p>
+        {/* =============================================================
+            WHY WE TALK FIRST: 15-Minute Call Requirement
+            ============================================================= */}
+        <section className="relative overflow-hidden bg-ink py-20 sm:py-28 border-b-2 border-snow/15">
+          <div className="mx-auto w-full max-w-[1400px] px-5 sm:px-8">
+            <Reveal className="flex items-center gap-5">
+              <span className="club-numeral club-hollow shrink-0 text-6xl text-snow sm:text-7xl">
+                02
+              </span>
+              <span className="club-label shrink-0 text-snow">No Blind Checkouts</span>
+              <span
+                aria-hidden="true"
+                className="club-slashes h-7 flex-1 text-red [--bar:5px] [--gap:13px]"
+              />
+            </Reveal>
 
-              <div className="mt-8">
-                <a
-                  href={siteLinks.booking15Min}
-                  className="club-btn-accent inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-bold uppercase tracking-wider text-snow"
-                >
-                  Choose your call time
-                  <ArrowIcon className="h-4 w-4" />
-                </a>
-              </div>
+            <div className="mt-12 border-2 border-snow/15 bg-ink p-8 sm:p-12 max-w-4xl">
+              <Reveal>
+                <h3 className="font-club text-club-md text-snow">
+                  Why we talk before taking any payment.
+                </h3>
+                <p className="mt-6 text-base sm:text-lg leading-relaxed text-snow-dim">
+                  Each group is strictly capped at around five runners matched by timezone, weekly
+                  training volume, and target race goals.
+                </p>
+                <p className="mt-4 text-base sm:text-lg leading-relaxed text-snow-dim">
+                  Before collecting any money, we grab 15 minutes on a video call to ensure the
+                  group call time works with your routine and that group coaching is genuinely the
+                  best vehicle for your goals.
+                </p>
+
+                <div className="mt-8">
+                  <a
+                    href={siteLinks.booking15Min}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-club btn-club-red club-label group inline-flex items-center justify-center gap-3 px-8 py-4 text-center"
+                  >
+                    <span className="inline-flex items-center gap-3">
+                      Choose your call time
+                      <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </span>
+                  </a>
+                </div>
+              </Reveal>
             </div>
-          </Reveal>
+          </div>
         </section>
 
         {/* Proof Band */}
@@ -179,58 +239,87 @@ export default function GroupFounderOfferPage() {
         {/* Fit Section */}
         <ClubFit />
 
-        {/* Bottom CTA */}
-        <section className="mx-auto max-w-3xl px-4 py-24 sm:px-6 lg:px-8 text-center">
-          <Reveal>
-            <h2 className="club-display text-3xl sm:text-4xl font-bold uppercase text-snow">
-              Secure your founding spot.
-            </h2>
-            <p className="mt-4 text-sm sm:text-base text-ink-soft max-w-lg mx-auto">
-              Cohorts launch at the end of September. Spaces are strictly limited by squad size.
-            </p>
-
-            <div className="mt-8 flex justify-center">
-              <a
-                href={siteLinks.booking15Min}
-                className="club-btn-accent inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold uppercase tracking-wider text-snow"
-              >
-                Book your 15-minute call
-                <ArrowIcon className="h-4 w-4" />
-              </a>
-            </div>
-          </Reveal>
+        {/* =============================================================
+            FINAL CTA
+            ============================================================= */}
+        <section className="relative overflow-hidden bg-ink py-20 sm:py-28">
+          <div className="mx-auto w-full max-w-[1400px] px-5 sm:px-8">
+            <Reveal>
+              <div className="club-cut-br flex flex-col items-start justify-between gap-8 bg-red p-8 text-ink sm:flex-row sm:items-center sm:p-12">
+                <div className="max-w-2xl">
+                  <h3 className="font-club text-club-md">
+                    Secure your founding spot.
+                  </h3>
+                  <p className="mt-4 max-w-xl leading-relaxed text-base text-ink font-medium">
+                    Cohorts launch at the end of September. Spaces are strictly limited by squad
+                    size to ensure personal attention.
+                  </p>
+                </div>
+                <a
+                  href={siteLinks.booking15Min}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-club btn-club-ink club-label group inline-flex shrink-0 items-center justify-center gap-3 px-8 py-5 text-center text-sm"
+                >
+                  <span className="inline-flex items-center gap-3">
+                    Book your 15-minute call
+                    <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </a>
+              </div>
+            </Reveal>
+          </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-paper/10 bg-ink py-12 text-xs text-paper/40">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <footer className="border-t-2 border-snow/15 bg-ink">
+        <div className="mx-auto flex w-full max-w-[1400px] flex-col gap-4 px-5 py-8 text-sm text-snow-dim sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <p>
-            &copy; {new Date().getFullYear()} {legal.company}. All rights reserved.
+            Looking for 1:1 coaching instead?{" "}
+            <Link
+              href={siteLinks.coaching}
+              className="text-snow underline decoration-red decoration-2 underline-offset-4 transition-colors hover:text-red-bright"
+            >
+              Explore 1:1 ultramarathon coaching
+            </Link>
+            .
           </p>
           <div className="flex items-center gap-6">
-            {legalPages.map((page) => (
-              <Link key={page.href} href={page.href} className="hover:text-snow">
-                {page.label}
-              </Link>
-            ))}
+            <a
+              href={`mailto:${siteLinks.email}`}
+              className="inline-flex items-center gap-2 transition-colors hover:text-red-bright"
+            >
+              <MailIcon className="h-4 w-4" />
+              Email
+            </a>
             <a
               href={siteLinks.instagram}
               target="_blank"
-              rel="noreferrer"
-              className="hover:text-snow flex items-center gap-1"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 transition-colors hover:text-red-bright"
             >
-              <InstagramIcon className="h-3.5 w-3.5" />
+              <InstagramIcon className="h-4 w-4" />
               Instagram
             </a>
-            <a
-              href={`mailto:${siteLinks.email}`}
-              className="hover:text-snow flex items-center gap-1"
-            >
-              <MailIcon className="h-3.5 w-3.5" />
-              Email
-            </a>
           </div>
+        </div>
+        <div className="mx-auto flex w-full max-w-[1400px] flex-col gap-2 px-5 pb-8 text-xs text-snow-dim/70 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+          <p>
+            © {new Date().getFullYear()} {brand.name}. All rights reserved. —{" "}
+            {legal.company}, {legal.address}
+          </p>
+          <nav aria-label="Legal" className="flex items-center gap-4">
+            {legalPages.map((page) => (
+              <Link
+                key={page.href}
+                href={page.href}
+                className="transition-colors hover:text-red-bright"
+              >
+                {page.label}
+              </Link>
+            ))}
+          </nav>
         </div>
       </footer>
     </div>

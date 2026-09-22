@@ -278,7 +278,7 @@ export const clubSections = [
  */
 export const clubPages = [
   { label: "1:1 Coaching", href: siteLinks.coaching },
-  { label: "Group waitlist", href: siteLinks.waitlist },
+  { label: "Group coaching", href: siteLinks.groupCoaching },
   { label: "Newsletter", href: siteLinks.newsletter },
 ] as const;
 

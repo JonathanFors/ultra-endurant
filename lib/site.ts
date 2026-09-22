@@ -108,7 +108,7 @@ export const siteLinks = {
   waitlist: "/group-coaching",
   // 15-minute intro booking
   booking15Min: "https://app.ultraendurant.com/book/coachjonathan/15-min",
-  // Standalone Shuffle Club landing page. Public and indexed — the link to put
+  // Standalone newsletter landing page. Public and indexed — the link to put
   // in a bio or at the end of an edition, where the homepage anchor buries the
   // signup under three other sections.
   newsletter: "/newsletter",
@@ -242,7 +242,7 @@ export const groupCoaching = {
 
 // Newsletter — three editions a week, free.
 export const shuffleClub = {
-  name: "Shuffle Club",
+  name: "Ultra Endurant",
   beehiivFormId: "5d6e4078-8f3a-49cc-9ce5-fc272223ffbd",
   /**
    * Printed on the homepage as social proof, so it has to stay true.

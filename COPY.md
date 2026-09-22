@@ -61,7 +61,7 @@ on is shown in red.
 | Link 1 | Approach |
 | Link 2 | How it works |
 | Link 3 | Coaching |
-| Link 4 | Group waitlist |
+| Link 4 | Group coaching |
 | Link 5 | Newsletter |
 | Button (red) | Book a call |
 
@@ -70,9 +70,8 @@ conversation rather than a purchase. The nav one stays short because the bar is
 tight at small widths; the fuller "Book a free intro call" is used wherever
 there's room.
 
-Link 4 is "Group waitlist" rather than "Group coaching" so it can't be misread
-as a second coaching offer sitting next to link 3 — it names the action. The
-footer has room for the full "Group coaching waitlist".
+Link 4 is "Group coaching" linking directly to /group-coaching now that the
+program has launched.
 
 ### Chat widget
 
@@ -480,7 +479,7 @@ false. Re-check beehiiv before raising it, and don't round up.
 | Column 1 heading | Page |
 | Column 1 links | Approach · How it works · Coaching |
 | Column 2 heading | Start |
-| Column 2 links | Book a free call · Group coaching waitlist · Shuffle Club newsletter |
+| Column 2 links | Book a free call · Group coaching · Shuffle Club newsletter |
 | Column 3 heading | Elsewhere |
 | Column 3 links | Email · Instagram · LinkedIn |
 | Copyright | © 2026 Ultra Endurant. All rights reserved. |

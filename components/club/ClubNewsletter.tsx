@@ -53,8 +53,8 @@ export default function ClubNewsletter() {
                 "CLUB" recoloured to snow. */}
             <Reveal className="flex items-center gap-4">
               <Image
-                src="/images/shuffle-club-light.png"
-                alt="Shuffle Club"
+                src="/logo/ultra-endurant-lockup-dark.svg"
+                alt="Ultra Endurant"
                 width={597}
                 height={318}
                 sizes="7rem"

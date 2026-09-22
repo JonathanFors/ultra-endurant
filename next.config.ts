@@ -12,6 +12,15 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "i.ytimg.com", pathname: "/vi/**" },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/waitlist",
+        destination: "/group-coaching",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -23,7 +23,7 @@ import { brand, facts, legal, legalPages, shuffleClub, siteLinks, subscribeSourc
  * apart by `data-cta-location` and in Vercel Analytics by route.
  */
 
-const title = "Shuffle Club — the newsletter";
+const title = "The Ultra Endurant Newsletter";
 const shareImage = "/images/hero-coast-road.jpg";
 const shareImageAlt =
   "A runner on a winding coastal road above the Atlantic in Portugal.";
@@ -124,7 +124,7 @@ export default function NewsletterPage() {
                     with the slashes and "CLUB" in off-white. */}
                 <Reveal>
                   <Image
-                    src="/images/shuffle-club-light.png"
+                    src="/logo/ultra-endurant-lockup-dark.svg"
                     alt={shuffleClub.name}
                     width={597}
                     height={318}
@@ -186,7 +186,7 @@ export default function NewsletterPage() {
                     UESCA Certified
                   </p>
                   <p className="mt-3 border-t border-snow/20 pt-4 text-sm leading-relaxed text-snow-dim">
-                    Shuffle Club is written by Jonathan Fors, a UESCA certified ultra running coach.
+                    The Ultra Endurant newsletter is written by Jonathan Fors, a UESCA certified ultra running coach.
                   </p>
                 </div>
               </div>

@@ -73,10 +73,10 @@ export default function ClubFooter() {
                 </li>
                 <li>
                   <Link
-                    href={siteLinks.waitlist}
+                    href={siteLinks.groupCoaching}
                     className="text-snow transition-colors hover:text-red-bright"
                   >
-                    Group coaching waitlist
+                    Group coaching
                   </Link>
                 </li>
                 <li>

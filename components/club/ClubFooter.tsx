@@ -84,7 +84,7 @@ export default function ClubFooter() {
                     href={siteLinks.newsletter}
                     className="text-snow transition-colors hover:text-red-bright"
                   >
-                    Shuffle Club newsletter
+                    Newsletter
                   </Link>
                 </li>
               </ul>

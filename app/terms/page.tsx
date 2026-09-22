@@ -41,7 +41,7 @@ import {
 
 const title = "Terms of service";
 const description =
-  "The terms for coaching, the group programme, the waitlist draw and the Shuffle Club newsletter — including the part where coaching is not medical advice.";
+  "The terms for coaching, the group programme, the waitlist draw and the Ultra Endurant newsletter — including the part where coaching is not medical advice.";
 
 export const metadata: Metadata = {
   title,

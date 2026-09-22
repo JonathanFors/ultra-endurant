@@ -100,9 +100,14 @@ export const siteLinks = {
   // The athlete-intake page is intentionally NOT linked anywhere on the site
   // (noindex). Jonathan sends this URL manually to athletes he has spoken to.
   intake: "/athlete-intake",
-  // Standalone group-coaching waitlist landing page. Public and indexed —
-  // this is the link to put in a bio or a post, not the homepage anchor.
-  waitlist: "/waitlist",
+  // Standalone group coaching landing page.
+  groupCoaching: "/group-coaching",
+  // Founder offer landing page (non-winner incentive)
+  groupFounderOffer: "/group-founder-offer",
+  // Legacy waitlist path (redirects to /group-coaching)
+  waitlist: "/group-coaching",
+  // 15-minute intro booking
+  booking15Min: "https://app.ultraendurant.com/book/coachjonathan/15-min",
   // Standalone Shuffle Club landing page. Public and indexed — the link to put
   // in a bio or at the end of an edition, where the homepage anchor buries the
   // signup under three other sections.

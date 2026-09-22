@@ -209,14 +209,14 @@ export default function GroupFounderOfferPage() {
             &copy; {new Date().getFullYear()} {legal.company}. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <Link href={legalPages.terms.href} className="hover:text-snow">
+            <Link href={siteLinks.terms} className="hover:text-snow">
               Terms
             </Link>
-            <Link href={legalPages.privacy.href} className="hover:text-snow">
+            <Link href={siteLinks.privacy} className="hover:text-snow">
               Privacy
             </Link>
             <a
-              href={brand.instagram}
+              href={siteLinks.instagram}
               target="_blank"
               rel="noreferrer"
               className="hover:text-snow flex items-center gap-1"
@@ -225,7 +225,7 @@ export default function GroupFounderOfferPage() {
               Instagram
             </a>
             <a
-              href={`mailto:${brand.email}`}
+              href={`mailto:${siteLinks.email}`}
               className="hover:text-snow flex items-center gap-1"
             >
               <MailIcon className="h-3.5 w-3.5" />

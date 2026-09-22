@@ -278,7 +278,7 @@ Unchanged from the previous version of the page apart from its number (was 02).
 | Section label | The program |
 
 > ▸ **Headline**
-> The plan will change, because **in 4 steps**
+> Becoming a stronger athlete, **in 4 steps**
 
 ### The four steps
 
